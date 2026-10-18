@@ -48,6 +48,13 @@ All warning thresholds (frost, heat, rain, sowing, demo storm) are in **`src/con
 python -m src.test_warnings
 ```
 
+## Where we take it next
+ 
+- **User accounts and a database:** remember everything about each farmer (fields, crops, sowing dates, past seasons, warnings received), not just what one browser stores.
+- **Smarter advice:** use each farmer's history to learn from real results, not only from forecasts.
+- **Farmer network:** connect neighbours with the same crops or the same flood risk, so they can share tips and warn each other about local problems.
+- **Push notifications:** send flood and frost warnings to the farmer's phone even when the app is closed.
+
 ## Data sources
 
 - **Hackathon dataset:** 5 years of daily weather and topsoil data per NUTS3 region (climate, frost dates, supported area)
