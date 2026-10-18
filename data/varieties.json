@@ -1,0 +1,3743 @@
+{
+  "schema_version": "2.1",
+  "crop": "wheat",
+  "generated": "2026-10-17",
+  "disclaimer": "Per-variety facts listed under verification.verified_fields were checked against the cited sources. All other numeric values (GDD, frost kill, soil, sowing/harvest windows, etc.) are typical type-level agronomic ranges, not variety trial data, and carry low-to-medium confidence. Verify before operational use.",
+  "coverage_notes": "Strong source coverage: UK AHDB list and Romanian Fundulea. Weak: FR and DE bread wheat, Italian durum. Not covered: PL, UA, HU, ES. 7 varieties remain unverified (Julius, RGT Reform, Rubisko, Arkeos, Svevo, Claudio, Miradoux).",
+  "units": {
+    "gdd": "growing degree-days, base = growth.heat_base_c, cumulative from sowing",
+    "dates": "MM-DD"
+  },
+  "sources": {
+    "AHDB": "https://ahdb.org.uk/knowledge-library/recommended-lists-variety-comments-for-cereals-and-oilseed-rape",
+    "BIOLAND_2026": "https://a.storyblok.com/f/319110/x/212aac56a0/bioland-saatgutliste-herbst-2026.pdf",
+    "DROPIA_PATENT": "https://patents.google.com/patent/RO111978B1/ro",
+    "FDL_COLUMNA": "https://www.incda-fundulea.ro/fise/pdf/Grau/Columna.pdf",
+    "FDL_IZVOR": "https://www.incda-fundulea.ro/fise/pdf/Grau/Izvor.pdf",
+    "FDL_TRIALS": "https://www.incda-fundulea.ro/cercet/ader/ader111.19.2.pdf",
+    "FDL_URSITA": "https://www.incda-fundulea.ro/anale/89/89.19.pdf",
+    "LFL_2026": "https://www.lfl.bayern.de/mam/cms07/iab/dateien/sortenempfehlungen_getreide_legus_2026_neu.pdf",
+    "SACHSEN_2012": "https://www.landwirtschaft.sachsen.de/download/Sortenempf_Oeko_Winterweizen_2012.pdf",
+    "TOPAGRAR_PLASMADUR": "https://www.topagrar.com/acker/news/hauptsaaten-stellt-vier-neue-getreidesorten-vor-20024243.html",
+    "AHDB_COMMENTS_2026_27": "https://ahdb.org.uk/knowledge-library/recommended-lists-variety-comments-for-cereals-and-oilseed-rape",
+    "SRUC_2026_27": "https://www.sruc.ac.uk/media/silbol3g/sruc-cereals-recommended-list-2026-tables-winter-edition.pdf",
+    "LFL_WS_2026": "https://www.lfl.bayern.de/mam/cms07/iab/dateien/ws_sortenemp_2026.pdf"
+  },
+  "varieties": [
+    {
+      "variety_id": "crusoe",
+      "variety_name": "Crusoe",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "UKFM Group 1 (ukp bread wheat)",
+      "protein_potential_pct": [
+        12.5,
+        13.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "High Hagbergs and good protein; short, stiff straw; very susceptible to brown rust.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "main_regions(UK list)",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 1 ukp; high Hagbergs, good protein; short stiff straw; very susceptible to brown rust: confirmed (AHDB comments 2026/27)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_zyatt",
+      "variety_name": "KWS Zyatt",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "UKFM Group 1 (ukp bread wheat)",
+      "protein_potential_pct": [
+        12.5,
+        13.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "Stiff straw; very susceptible to yellow rust; carries Pch1 eyespot gene.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 1 ukp; stiff straw; Pch1; very susceptible to yellow rust: confirmed (AHDB)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "skyfall",
+      "variety_name": "Skyfall",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "UKFM Group 1",
+      "protein_potential_pct": [
+        12.5,
+        13.5
+      ],
+      "main_regions": [
+        "UK",
+        "IE"
+      ],
+      "notes": "Awned, stiff straw; very susceptible to yellow rust; resistant to orange wheat blossom midge (breeder claim); tends to sprout, so prioritise at harvest.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 1 (not Group 2); awned, stiff straw; very susceptible to yellow rust; tendency to sprout, harvest early: confirmed (AHDB)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_extase",
+      "variety_name": "KWS Extase",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "UKFM Group 2 (ukp bread wheat)",
+      "protein_potential_pct": [
+        11.5,
+        13.0
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "Relatively early maturing for the UK list; high yields across the UK; susceptible to eyespot; high resistance to yellow rust, brown rust and septoria tritici. Continental marketing not verified.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "maturity_group(relative)",
+          "notes",
+          "main_regions(UK list)"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "UKFM Group 2 ukp; relatively early; very high untreated yield; susceptible to eyespot: confirmed (AHDB).",
+            "main_regions reduced to UK: only the UK list was checked."
+          ],
+          "not_rechecked": [
+            "DE/FR marketing (removed from main_regions)."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_arnie",
+      "variety_name": "KWS Arnie",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "UKFM Group 2",
+      "protein_potential_pct": [
+        11.5,
+        13.0
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "Relatively early maturing, medium-tall stiff straw; low water absorption.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "maturity_group(relative)",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27",
+          "SRUC_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 2; relatively early (-1 day vs Skyfall in SRUC); medium-tall stiff straw; low water absorption: confirmed (AHDB, SRUC)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "sparkler",
+      "variety_name": "Sparkler",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Soft Group 4 / uks, distilling: high",
+      "protein_potential_pct": [
+        10.5,
+        11.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "New on UK RL 2026/27; very high yield potential; high resistance to yellow rust and septoria tritici; susceptible to brown rust; medium-tall, moderate straw strength.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27",
+          "SRUC_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "New 2026, soft Group 4 uks, distilling high; very high yield potential; susceptible to brown rust; high yellow rust and septoria resistance: confirmed (AHDB; SRUC P1 2026)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "capo",
+      "variety_name": "Capo",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "E (elite bread)",
+      "protein_potential_pct": [
+        13.0,
+        15.0
+      ],
+      "main_regions": [
+        "DE",
+        "AT"
+      ],
+      "notes": "Organic-breeding E wheat, still on Bioland autumn-2026 seed list (Probstdorfer Saatzucht (spelled \"Propsdorfer\" in the Bioland list)); good winter hardiness reported in Saxony organic trials; tested in Bavaria 2006–2017.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "frost_tolerance(qualitative)",
+          "availability"
+        ],
+        "source_ids": [
+          "BIOLAND_2026",
+          "SACHSEN_2012"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "Bioland autumn-2026 Z-seed list: awned E wheat from organic breeding, Probstdorfer Saatzucht: confirmed.",
+            "Austrian organic variety trials list Capo, supporting AT as a region."
+          ],
+          "not_rechecked": [
+            "Saxony winter-hardiness remark (SACHSEN_2012) and Bavarian trial years not re-opened."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "julius",
+      "variety_name": "Julius",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "E (elite bread)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "DE",
+        "AT",
+        "CZ"
+      ],
+      "notes": "NOT re-verified in this pass.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "rgt_reform",
+      "variety_name": "RGT Reform",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "B / feed-bread",
+      "protein_potential_pct": [
+        11.5,
+        13.0
+      ],
+      "main_regions": [
+        "FR",
+        "DE",
+        "UK"
+      ],
+      "notes": "NOT verified; not found on AHDB RL 2026/27.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "Not present on the AHDB RL 2026/27 comments page, consistent with the existing note. 'UK' in main_regions is therefore unsupported for the 2026/27 list."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "rubisko",
+      "variety_name": "Rubisko",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "B / feed",
+      "protein_potential_pct": [
+        11.0,
+        12.5
+      ],
+      "main_regions": [
+        "FR",
+        "DE"
+      ],
+      "notes": "NOT verified.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "arkeos",
+      "variety_name": "Arkeos",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "A",
+      "protein_potential_pct": [
+        12.0,
+        13.5
+      ],
+      "main_regions": [
+        "FR"
+      ],
+      "notes": "NOT verified.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "glosa",
+      "variety_name": "Glosa",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 250,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "Bread wheat (Fundulea control variety)",
+      "protein_potential_pct": [
+        12.5,
+        14.0
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Registered 2005; early; ~230 days emergence→maturity; mean protein 13.3% in Fundulea tests; most affected by mildew in trial.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "maturity_group",
+          "registered",
+          "protein_potential_pct",
+          "days(from emergence)"
+        ],
+        "source_ids": [
+          "FDL_COLUMNA",
+          "FDL_TRIALS"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Registered 2005 and described as early with a 230 day vegetation period: confirmed (Columna sheet, Fundulea trial paper). Mean protein 13.3%: confirmed (Columna sheet)."
+          ],
+          "not_rechecked": [
+            "'most affected by mildew in trial' not re-opened."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "izvor",
+      "variety_name": "Izvor",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 250,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "Bread wheat (good milling/baking)",
+      "protein_potential_pct": [
+        11.5,
+        13.0
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Registered 2008; early; very drought-resistant, good lodging and winter resistance; 90–105 cm; recommended for S/E Romania.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "maturity_group",
+          "drought_sensitivity",
+          "frost_tolerance(good)",
+          "quality_class",
+          "height"
+        ],
+        "source_ids": [
+          "FDL_IZVOR"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Registered 2008, early, awned, 90-105 cm, very drought resistant, good lodging and winter resistance: confirmed (Izvor sheet)."
+          ],
+          "not_rechecked": [
+            "'recommended for S/E Romania' (sheet text truncated)."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "fdl_columna",
+      "variety_name": "FDL Columna",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 250,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "Bread wheat (very good baking)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "New Fundulea variety (tested 2021–2024); early like Glosa; mean protein 14.0%; awned.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "maturity_group",
+          "protein_potential_pct",
+          "quality_class"
+        ],
+        "source_ids": [
+          "FDL_COLUMNA"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Registered 2025, early, 230 days like Glosa, awned, mean protein 14.0% vs Glosa 13.3%: confirmed (Columna sheet). Four-year test average matches '2021-2024'."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "pitar",
+      "variety_name": "Pitar",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 250,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Bread wheat (very good baking)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Fundulea variety recommended for very good bread quality; maturity not verified.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class"
+        ],
+        "source_ids": [
+          "FDL_COLUMNA"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "partly_confirmed",
+          "evidence": [
+            "Registered 2015 (Fundulea). Protein similar to Columna per Columna sheet (text truncated). A secondary website calls Pitar 'very early'; no primary source, so maturity left unverified."
+          ],
+          "not_rechecked": [
+            "Maturity group."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "ursita",
+      "variety_name": "Ursita",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 250,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Bread wheat",
+      "protein_potential_pct": [
+        12.0,
+        13.5
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Fundulea, derived from Glosa; mid-early.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "maturity_group"
+        ],
+        "source_ids": [
+          "FDL_URSITA"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Registered 2021, mid-early ('mijlociu de precoce'), derived from Glosa backcross, height 87-90 cm: confirmed (Ursita paper)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "dropia",
+      "variety_name": "Dropia",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "10-01",
+        "window_end": "10-30",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 270,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -18,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-25",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "Bread wheat",
+      "protein_potential_pct": [
+        12.0,
+        13.5
+      ],
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Older Fundulea variety; patent states early, 268–275 day vegetation period, drought/heat tolerant, mildew-resistant. Current availability not verified. Open point: days_to_maturity_typical (270) is longer than the early group default (250) although the patent calls it early; the patent's day count likely uses a different basis.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "maturity_group(patent)",
+          "drought/heat tolerance(patent)"
+        ],
+        "source_ids": [
+          "DROPIA_PATENT"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "not_independently_verifiable",
+          "evidence": [
+            "Patent not re-opened."
+          ],
+          "not_rechecked": [
+            "Patent claims; basis of the 268-275 day figure."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "bezostaya_1",
+      "variety_name": "Bezostaya 1",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 140,
+          "flowering": 1350,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-25",
+        "window_end": "11-10",
+        "min_soil_temp_c": 4
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -20,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            140
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            140,
+            1250
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1250,
+            1450
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1450,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-15",
+          "08-15"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "medium",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Bread wheat",
+      "protein_potential_pct": [
+        12.0,
+        13.5
+      ],
+      "main_regions": [
+        "RO",
+        "BG",
+        "UA"
+      ],
+      "notes": "Appears in Fundulea trials; availability not verified.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [
+          "FDL_TRIALS"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Appears as a historical control in Fundulea trial papers: confirmed. No agronomic fields were claimed as verified."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "mulika",
+      "variety_name": "Mulika",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 120,
+          "flowering": 900,
+          "maturity": 1650
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "spring",
+      "subtype": "spring",
+      "sowing": {
+        "window_start": "02-25",
+        "window_end": "04-15",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 135,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -7,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            120
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            120,
+            800
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            800,
+            1000
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1000,
+            1650
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "08-01",
+          "08-31"
+        ]
+      },
+      "order_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "drought_sensitivity": "high",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "UKFM Group 1 (spring)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "Short; good protein but weaker gluten than the other Group 1 spring varieties; UK-listed; high mildew resistance.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "notes",
+          "main_regions"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 1 spring; short; weaker gluten than other Group 1 spring varieties; on UK list: confirmed (AHDB)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "charland",
+      "variety_name": "Charland",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 120,
+          "flowering": 900,
+          "maturity": 1650
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "spring",
+      "subtype": "spring",
+      "sowing": {
+        "window_start": "02-25",
+        "window_end": "04-15",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 135,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -7,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            120
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            120,
+            800
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            800,
+            1000
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1000,
+            1650
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "08-01",
+          "08-31"
+        ]
+      },
+      "order_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "drought_sensitivity": "high",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "UKFM Group 1 (white-grain wheat)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "New 2026; white-grain spring wheat classified UKFM Group 1 (specific use: white wheat); short, relatively early; high brown rust resistance, susceptible to yellow rust; watch Hagberg falling number.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "maturity_group(relative)",
+          "notes"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "UKFM Group 1 spring, white-grain wheat, new 2026, short, relatively early, high brown rust resistance, susceptible to yellow rust: confirmed (AHDB).",
+            "'very white flour' is not in the source; removed."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "str_pace",
+      "variety_name": "STR Pace",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 120,
+          "flowering": 900,
+          "maturity": 1650
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "spring",
+      "subtype": "spring",
+      "sowing": {
+        "window_start": "02-25",
+        "window_end": "04-15",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 135,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -7,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            120
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            120,
+            800
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            800,
+            1000
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1000,
+            1650
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "08-01",
+          "08-31"
+        ]
+      },
+      "order_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "drought_sensitivity": "high",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "early",
+      "quality_class": "UKFM Group 1 (spring)",
+      "protein_potential_pct": [
+        13.0,
+        14.5
+      ],
+      "main_regions": [
+        "UK"
+      ],
+      "notes": "Short, relatively early; highest specific weight among Group 1 spring varieties on list.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "maturity_group(relative)"
+        ],
+        "source_ids": [
+          "AHDB",
+          "AHDB_COMMENTS_2026_27",
+          "SRUC_2026_27"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "UKFM Group 1 spring; short, relatively early; highest specific weight of Group 1 spring varieties: confirmed (AHDB; SRUC 80.6 kg/hl, -1 day vs Mulika)."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "alicia",
+      "variety_name": "Alicia",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 120,
+          "flowering": 900,
+          "maturity": 1650
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "spring",
+      "subtype": "spring",
+      "sowing": {
+        "window_start": "02-25",
+        "window_end": "04-15",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 135,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -7,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            120
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            120,
+            800
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            800,
+            1000
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1000,
+            1650
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "08-01",
+          "08-31"
+        ]
+      },
+      "order_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "drought_sensitivity": "high",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "A",
+      "protein_potential_pct": [
+        12.5,
+        13.5
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "On Bavarian organic spring-wheat recommendation 2026.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "status"
+        ],
+        "source_ids": [
+          "LFL_2026",
+          "LFL_WS_2026"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "LfL Bavaria organic spring wheat recommendation 2026: Alicia, A wheat: confirmed."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "kws_expectum",
+      "variety_name": "KWS Expectum",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 120,
+          "flowering": 900,
+          "maturity": 1650
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "spring",
+      "subtype": "spring",
+      "sowing": {
+        "window_start": "02-25",
+        "window_end": "04-15",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 135,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -7,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            120
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            120,
+            800
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            800,
+            1000
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1000,
+            1650
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "08-01",
+          "08-31"
+        ]
+      },
+      "order_months": [
+        12,
+        1,
+        2,
+        3
+      ],
+      "drought_sensitivity": "high",
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.3,
+        "ph_best": [
+          6.5,
+          7.5
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "E",
+      "protein_potential_pct": [
+        13.5,
+        15.0
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "On Bavarian organic spring-wheat recommendation 2026.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "quality_class",
+          "status"
+        ],
+        "source_ids": [
+          "LFL_2026",
+          "LFL_WS_2026"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "LfL Bavaria organic spring wheat recommendation 2026: KWS Expectum, E wheat: confirmed."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "plasmadur",
+      "variety_name": "Plasmadur",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 150,
+          "flowering": 1450,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "durum",
+      "sowing": {
+        "window_start": "10-10",
+        "window_end": "11-20",
+        "min_soil_temp_c": 5
+      },
+      "days_to_maturity_typical": 270,
+      "frost_tolerance": "medium",
+      "frost_kill_temp_c": -14,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            150
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            150,
+            1350
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1350,
+            1550
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1550,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-05"
+        ]
+      },
+      "order_months": [
+        8,
+        9,
+        10
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 6.0,
+        "ph_max": 8.5,
+        "ph_best": [
+          6.8,
+          8.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": []
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "late",
+      "quality_class": "Winter durum",
+      "protein_potential_pct": [
+        13.0,
+        15.0
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "New German-approved winter durum (Hauptsaaten); slightly later maturity, top winter hardiness (breeder claim); seed autumn 2026.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "maturity_group",
+          "frost_tolerance(breeder claim)"
+        ],
+        "source_ids": [
+          "TOPAGRAR_PLASMADUR"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "Approved by the Bundessortenamt, winter durum, slightly later maturity, top winter hardiness (breeder claim), seed from autumn 2026: confirmed (topagrar).",
+            "A Bavarian multiplication record for Plasmadur exists for 2025, so 'new' is relative."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation, frost kill: type defaults."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "svevo",
+      "variety_name": "Svevo",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 150,
+          "flowering": 1450,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "durum",
+      "sowing": {
+        "window_start": "11-01",
+        "window_end": "12-15",
+        "min_soil_temp_c": 5
+      },
+      "days_to_maturity_typical": 230,
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -10,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            150
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            150,
+            1350
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1350,
+            1550
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1550,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-15",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        8,
+        9,
+        10
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 6.0,
+        "ph_max": 8.5,
+        "ph_best": [
+          6.8,
+          8.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": []
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Durum (pasta)",
+      "protein_potential_pct": [
+        13.0,
+        15.0
+      ],
+      "main_regions": [
+        "IT"
+      ],
+      "notes": "NOT verified in this pass.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "claudio",
+      "variety_name": "Claudio",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 150,
+          "flowering": 1450,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "durum",
+      "sowing": {
+        "window_start": "11-01",
+        "window_end": "12-15",
+        "min_soil_temp_c": 5
+      },
+      "days_to_maturity_typical": 230,
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -10,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            150
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            150,
+            1350
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1350,
+            1550
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1550,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-15",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        8,
+        9,
+        10
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 6.0,
+        "ph_max": 8.5,
+        "ph_best": [
+          6.8,
+          8.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": []
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Durum (pasta)",
+      "protein_potential_pct": [
+        13.0,
+        15.0
+      ],
+      "main_regions": [
+        "IT"
+      ],
+      "notes": "NOT verified in this pass.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "miradoux",
+      "variety_name": "Miradoux",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 150,
+          "flowering": 1450,
+          "maturity": 2150
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "medium",
+      "crop_code": "wheat",
+      "season_type": "autumn",
+      "subtype": "durum",
+      "sowing": {
+        "window_start": "11-01",
+        "window_end": "12-15",
+        "min_soil_temp_c": 5
+      },
+      "days_to_maturity_typical": 230,
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -10,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            150
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            150,
+            1350
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1350,
+            1550
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1550,
+            2150
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "06-15",
+          "07-20"
+        ]
+      },
+      "order_months": [
+        8,
+        9,
+        10
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 6.0,
+        "ph_max": 8.5,
+        "ph_best": [
+          6.8,
+          8.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": []
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "soybean",
+          "sugar_beet",
+          "potato",
+          "sunflower",
+          "oat"
+        ],
+        "avoid_after": [
+          "wheat",
+          "barley",
+          "rye",
+          "triticale",
+          "maize_grain"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Durum (pasta)",
+      "protein_potential_pct": [
+        13.0,
+        15.0
+      ],
+      "main_regions": [
+        "FR"
+      ],
+      "notes": "NOT verified in this pass.",
+      "verification": {
+        "status": "unverified",
+        "verified_fields": [],
+        "source_ids": [],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "unverified",
+          "evidence": [
+            "No source cited; not independently verified in this audit."
+          ],
+          "not_rechecked": [
+            "All fields."
+          ]
+        }
+      },
+      "confidence": "low"
+    }
+  ],
+  "audit": {
+    "date": "2026-10-17",
+    "performed_by": "Claude (re-check of cited sources, then consistency validation with validate.py)",
+    "scope": "20 of 27 varieties re-checked: all UK entries against the AHDB RL 2026/27 comments and SRUC tables; Fundulea varieties against Fundulea sheets and papers; Bavarian and Bioland entries against their lists; Plasmadur against topagrar. 7 have no source and stay unverified.",
+    "changes_in_this_version": [
+      "skyfall, mulika notes: removed version-history remarks; Skyfall Group 1 confirmed.",
+      "charland: unsupported 'very white flour' removed.",
+      "kws_extase: main_regions reduced to UK; notes expanded from source.",
+      "sparkler: notes expanded from source.",
+      "capo: breeder name spelling corrected.",
+      "dropia: open point on day-count basis recorded, value unchanged.",
+      "Added audit block, definitions and per-variety evidence."
+    ],
+    "known_limitations": [
+      "7 varieties unverified.",
+      "Dropia patent not re-read.",
+      "UK varieties not checked for EU/Romanian registration.",
+      "All agronomy numbers are type defaults."
+    ],
+    "definitions": {
+      "days_to_maturity_typical": "Sowing-to-maturity in days for a sowing at the middle of sowing.window. Actual days shorten with later sowing, so the harvest window is not simply window_start + days.",
+      "gdd_basis": "heat_units_to_reach and phases are cumulative growing degree-days from sowing, base = growth.heat_base_c. Type-level values unless a field is listed in verification.verified_fields.",
+      "maturity_group": "Ordinal label used inside this file only. For maize it is derived from fao_number (<=200 very_early, 201-300 early, 301-370 medium, >370 late). For other crops it is a relative breeder/list rating where verified, else 'medium' default. It is not the national label of any source (Fundulea calls FAO 360-390 'semi-early'; LfL Bavaria calls K200 'frueh' and K230 'mittelfrueh')."
+    }
+  }
+}

@@ -1,0 +1,729 @@
+{
+  "schema_version": "2.1",
+  "crop": "rye",
+  "generated": "2026-10-17",
+  "disclaimer": "Per-variety facts listed under verification.verified_fields were checked against the cited sources. All other numeric values (GDD, frost kill, soil, sowing/harvest windows, etc.) are typical type-level agronomic ranges, not variety trial data, and carry low-to-medium confidence. Verify before operational use.",
+  "coverage_notes": "Five rye hybrids confirmed by name (v2.0 said four). Ratings (maturity, hardiness) exist only for SU Karlsson (maturity) and KWS Serafino (mid-early); all other agronomic fields are type defaults. Population rye varieties and Polish/Baltic varieties are NOT covered. Sowing and harvest windows are Germany-calibrated; for southern Romania harvest is typically earlier (not source-verified).",
+  "units": {
+    "gdd": "growing degree-days, base = growth.heat_base_c, cumulative from sowing",
+    "dates": "MM-DD"
+  },
+  "sources": {
+    "KWS_PM_2026": "https://mediamaster.kws.com/04_Company/Press/02_Press_Report/2026/KWS-PM-2026-03-30-sortenzulassung-getreide-2026.pdf",
+    "NORDKURIER_HYBRO": "https://www.nordkurier.de/regional/uckermark/saatzucht-unternehmen-plant-einen-ganz-besonderen-feldtag-4596264",
+    "SU_KARLSSON": "https://www.myagrar.de/pub/media/MyAGRAR/documents/509036-91/509036-91_Sortenbeschreibung_SUKarlssonÖko_2026-06-29.pdf",
+    "KWS_SERAFINO_SHEET": "https://www.myagrar.de/pub/media/MyAGRAR/documents/508900-91/508900-91_Sortenbeschreibung_KWSSerafinoÖko_2026-06-29.pdf",
+    "ISIP_ROGGEN": "https://isip.de/resource/blob/829182/edb19895b02137ce4c681098b0eab470/sorten-info-roggen-und-triticale-data.pdf",
+    "LWHEUTE_ROGGEN": "https://www.lw-heute.de/mediaarchiv/grab_pic.php?id=51531",
+    "KWS_DK_SERAFINO": "https://mediamaster.kws.com/01_Products/DK_Denmark/Cereal/Rye/Variety-sheets/KWS-DK-SERAFINO-hybridrug.pdf"
+  },
+  "varieties": [
+    {
+      "variety_id": "su_karlsson",
+      "variety_name": "SU Karlsson",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 130,
+          "flowering": 1300,
+          "maturity": 2050
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "low",
+      "compaction_sensitivity": "low",
+      "crop_code": "rye",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-15",
+        "window_end": "10-31",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -28,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            130
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            130,
+            1200
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200,
+            1400
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1400,
+            2050
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-10"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 4.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          5.5,
+          6.5
+        ],
+        "texture_best": [
+          "light",
+          "medium"
+        ],
+        "texture_ok": [
+          "heavy"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "potato",
+          "sunflower",
+          "oat",
+          "maize_grain"
+        ],
+        "avoid_after": [
+          "rye",
+          "triticale"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Hybrid winter rye",
+      "protein_potential_pct": [
+        9.0,
+        11.0
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "Hybro hybrid winter rye (variety-protection holder HYBRO Saatzucht; sold by Saaten-Union). Breeder gives sowing mid-Sept to end Oct. Maturity rated 5 on a 1-9 scale (medium). Seed is sold with 10% population rye mixed in, which is what lowers ergot susceptibility. The ergot rating appears to be 4 of 9 in the extracted sheet text, but the extract's layout is ambiguous: confirm in the original PDF. Source sheet is the organic-farming edition.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "sowing window",
+          "type",
+          "notes",
+          "maturity_group(relative)",
+          "seed mix (10% population rye)"
+        ],
+        "source_ids": [
+          "SU_KARLSSON"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "Sowing window mid-Sept to end Oct: confirmed (SU_KARLSSON).",
+            "Breeder/holder HYBRO, hybrid winter rye: confirmed.",
+            "Maturity rating 5/9: confirmed -> medium.",
+            "10% population-rye admixture: confirmed; this is the stated reason for reduced ergot susceptibility."
+          ],
+          "not_rechecked": [
+            "Exact ergot score (PDF text extraction scrambled the table)."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_valentor",
+      "variety_name": "KWS Valentor",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 130,
+          "flowering": 1300,
+          "maturity": 2050
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "low",
+      "compaction_sensitivity": "low",
+      "crop_code": "rye",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-15",
+        "window_end": "10-31",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -28,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            130
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            130,
+            1200
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200,
+            1400
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1400,
+            2050
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-10"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 4.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          5.5,
+          6.5
+        ],
+        "texture_best": [
+          "light",
+          "medium"
+        ],
+        "texture_ok": [
+          "heavy"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "potato",
+          "sunflower",
+          "oat",
+          "maize_grain"
+        ],
+        "avoid_after": [
+          "rye",
+          "triticale"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Hybrid winter rye",
+      "protein_potential_pct": [
+        9.0,
+        11.0
+      ],
+      "main_regions": [
+        "DE",
+        "EU"
+      ],
+      "notes": "EU-registered 2026 Classic hybrid rye with PollenPLUS technology; seed available for 2026 sowing (KWS press release 30 Mar 2026). Highest yield and first-class ergot defence are breeder claims, not trial data.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "type",
+          "technology (PollenPLUS)"
+        ],
+        "source_ids": [
+          "KWS_PM_2026"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "EU approval 2026, availability for 2026 sowing, Classic hybrid, PollenPLUS: confirmed in KWS_PM_2026.",
+            "Yield and ergot statements are marketing claims (kept as claims)."
+          ],
+          "not_rechecked": [
+            "German national-list status not stated in source."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "su_fred",
+      "variety_name": "SU Fred",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 130,
+          "flowering": 1300,
+          "maturity": 2050
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "low",
+      "compaction_sensitivity": "low",
+      "crop_code": "rye",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-15",
+        "window_end": "10-31",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -28,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            130
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            130,
+            1200
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200,
+            1400
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1400,
+            2050
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-10"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 4.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          5.5,
+          6.5
+        ],
+        "texture_best": [
+          "light",
+          "medium"
+        ],
+        "texture_ok": [
+          "heavy"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "potato",
+          "sunflower",
+          "oat",
+          "maize_grain"
+        ],
+        "avoid_after": [
+          "rye",
+          "triticale"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Hybrid winter rye",
+      "protein_potential_pct": [
+        9.0,
+        11.0
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "Hybro hybrid rye shown at the Hybro summer field day (25 Jun 2026) as one of the hybrid rye varieties approved in 2025 and 2026. The article does not say which of the two was approved in which year.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "type"
+        ],
+        "source_ids": [
+          "NORDKURIER_HYBRO"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "Named as newly approved hybrid rye varieties (2025 and 2026) in NORDKURIER_HYBRO.",
+            "Original note said each was 'approved 2025/26'; the source only gives the pair."
+          ],
+          "not_rechecked": [
+            "Individual approval year; ratings."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "su_fenn",
+      "variety_name": "SU Fenn",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 130,
+          "flowering": 1300,
+          "maturity": 2050
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "low",
+      "compaction_sensitivity": "low",
+      "crop_code": "rye",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-15",
+        "window_end": "10-31",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -28,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            130
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            130,
+            1200
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200,
+            1400
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1400,
+            2050
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-10"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 4.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          5.5,
+          6.5
+        ],
+        "texture_best": [
+          "light",
+          "medium"
+        ],
+        "texture_ok": [
+          "heavy"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "potato",
+          "sunflower",
+          "oat",
+          "maize_grain"
+        ],
+        "avoid_after": [
+          "rye",
+          "triticale"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Hybrid winter rye",
+      "protein_potential_pct": [
+        9.0,
+        11.0
+      ],
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "Hybro hybrid rye shown at the Hybro summer field day (25 Jun 2026) as one of the hybrid rye varieties approved in 2025 and 2026. The article does not say which of the two was approved in which year.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "type"
+        ],
+        "source_ids": [
+          "NORDKURIER_HYBRO"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "corrected",
+          "evidence": [
+            "Named as newly approved hybrid rye varieties (2025 and 2026) in NORDKURIER_HYBRO.",
+            "Original note said each was 'approved 2025/26'; the source only gives the pair."
+          ],
+          "not_rechecked": [
+            "Individual approval year; ratings."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "kws_serafino",
+      "variety_name": "KWS Serafino",
+      "category": "cultivated",
+      "fao_number": null,
+      "growth": {
+        "heat_base_c": 0.0,
+        "heat_units_to_reach": {
+          "emergence": 130,
+          "flowering": 1300,
+          "maturity": 2050
+        }
+      },
+      "heat_stress_above_c": 30,
+      "waterlogging_sensitivity": "medium",
+      "water": {
+        "irrigation": "not_needed"
+      },
+      "organic_matter_need": "low",
+      "compaction_sensitivity": "low",
+      "crop_code": "rye",
+      "season_type": "autumn",
+      "subtype": "winter",
+      "sowing": {
+        "window_start": "09-15",
+        "window_end": "10-31",
+        "min_soil_temp_c": 3
+      },
+      "days_to_maturity_typical": 285,
+      "frost_tolerance": "high",
+      "frost_kill_temp_c": -28,
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            130
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            130,
+            1200
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200,
+            1400
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1400,
+            2050
+          ]
+        }
+      },
+      "harvest": {
+        "window": [
+          "07-10",
+          "08-10"
+        ]
+      },
+      "order_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "drought_sensitivity": "low",
+      "soil": {
+        "ph_min": 4.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          5.5,
+          6.5
+        ],
+        "texture_best": [
+          "light",
+          "medium"
+        ],
+        "texture_ok": [
+          "heavy"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "rapeseed",
+          "field_pea",
+          "faba_bean",
+          "potato",
+          "sunflower",
+          "oat",
+          "maize_grain"
+        ],
+        "avoid_after": [
+          "rye",
+          "triticale"
+        ]
+      },
+      "maturity_group": "medium",
+      "quality_class": "Hybrid winter rye",
+      "protein_potential_pct": [
+        9.0,
+        11.0
+      ],
+      "main_regions": [
+        "DE",
+        "DK"
+      ],
+      "notes": "EU-approved 2017 Classic hybrid rye with PollenPLUS; 100% hybrid seed (no population-rye admixture); described as mid-early; KWS sheet claims strong ergot defence, mildew and fusarium tolerance and good dry-site performance. Trialled in Germany and sold in Denmark. Use in Poland not confirmed by the sources found.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status (EU approval 2017)",
+          "type",
+          "maturity_group(relative)",
+          "seed type"
+        ],
+        "source_ids": [
+          "KWS_SERAFINO_SHEET",
+          "ISIP_ROGGEN",
+          "LWHEUTE_ROGGEN",
+          "KWS_DK_SERAFINO"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "upgraded_from_unverified",
+          "evidence": [
+            "Approval year 2017 (EU) and hybrid type: ISIP_ROGGEN.",
+            "'Mittelfrueh' maturity: LWHEUTE_ROGGEN.",
+            "PollenPLUS, 100% hybrid seed: KWS_SERAFINO_SHEET.",
+            "Danish sale: KWS_DK_SERAFINO."
+          ],
+          "not_rechecked": [
+            "PL as a region (removed, no source)."
+          ]
+        }
+      },
+      "confidence": "low"
+    }
+  ],
+  "audit": {
+    "date": "2026-10-17",
+    "performed_by": "Claude (re-check of cited sources, then consistency validation with validate.py)",
+    "scope": "All 5 varieties re-checked against the cited sources plus 4 new sources for KWS Serafino.",
+    "changes_in_this_version": [
+      "su_karlsson notes: ergot statement corrected (seed-mix effect, rating ~4/9); maturity rating added as verified.",
+      "su_fred, su_fenn notes: no longer claims each was approved in 2025/26.",
+      "kws_valentor notes: marketing claims labelled as claims; PollenPLUS added.",
+      "kws_serafino: upgraded from unverified; main_regions PL removed, DK added; sources added.",
+      "Added audit block and definitions; days_to_maturity_typical now defined relative to mid-window sowing (resolves the earlier-sowing vs harvest-window mismatch)."
+    ],
+    "known_limitations": [
+      "All numeric agronomy fields remain type-level defaults.",
+      "SU Karlsson ergot score unconfirmed (PDF extraction).",
+      "Harvest window not calibrated for Romania."
+    ],
+    "definitions": {
+      "days_to_maturity_typical": "Sowing-to-maturity in days for a sowing at the middle of sowing.window. Actual days shorten with later sowing, so the harvest window is not simply window_start + days.",
+      "gdd_basis": "heat_units_to_reach and phases are cumulative growing degree-days from sowing, base = growth.heat_base_c. Type-level values unless a field is listed in verification.verified_fields.",
+      "maturity_group": "Ordinal label used inside this file only. For maize it is derived from fao_number (<=200 very_early, 201-300 early, 301-370 medium, >370 late). For other crops it is a relative breeder/list rating where verified, else 'medium' default. It is not the national label of any source (Fundulea calls FAO 360-390 'semi-early'; LfL Bavaria calls K200 'frueh' and K230 'mittelfrueh')."
+    }
+  }
+}

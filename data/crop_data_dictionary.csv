@@ -1,0 +1,47 @@
+variable_name,full_name,description,unit_or_coding,nullable
+annual_dry_days,Annual Dry Days,Analysis-ready annual dry days.,source-specific or dimensionless,Yes
+annual_frost_days,Annual Frost Days,Analysis-ready annual frost days.,source-specific or dimensionless,Yes
+annual_gdd_base_5_c,Annual growing degree days Base 5 °C,Analysis-ready annual growing degree days base 5 °c.,°C,Yes
+annual_heat_days,Annual Heat Days,Analysis-ready annual heat days.,source-specific or dimensionless,Yes
+annual_precipitation_mm,Annual Precipitation Mm,Analysis-ready annual precipitation mm.,mm,Yes
+annual_reference_evapotranspiration_mm,Annual Reference Evapotranspiration Mm,Analysis-ready annual reference evapotranspiration mm.,mm,Yes
+annual_water_balance_mm,Annual Water Balance Mm,Analysis-ready annual water balance mm.,mm,Yes
+april_september_precipitation_mm,April September Precipitation Mm,Analysis-ready april september precipitation mm.,mm,Yes
+completeness_score,Completeness Score,Analysis-ready completeness score.,source-specific or dimensionless,Yes
+country_code,Country Code,Analysis-ready country code.,code,Yes
+crop_group_code,Crop group code,Project crop group based on ECIRA.,code,Yes
+crop_group_name,Crop Group Name,Analysis-ready crop group name.,source-specific or dimensionless,Yes
+fungicide_kg_ai_ha,Fungicide kg active ingredient hectares,Analysis-ready fungicide kg active ingredient hectares.,kg active ingredient/ha,Yes
+herbicide_kg_ai_ha,Herbicide kg active ingredient hectares,Analysis-ready herbicide kg active ingredient hectares.,kg active ingredient/ha,Yes
+insecticide_kg_ai_ha,Insecticide kg active ingredient hectares,Analysis-ready insecticide kg active ingredient hectares.,kg active ingredient/ha,Yes
+irrigated_area_ha,Irrigated Area hectares,Analysis-ready irrigated area hectares.,ha,Yes
+irrigated_share,Irrigated Share,Analysis-ready irrigated share.,source-specific or dimensionless,Yes
+nitrogen_kg_ha,Nitrogen kg hectares,Analysis-ready nitrogen kg hectares.,kg/ha,Yes
+npk_quality_flag,Npk Quality Flag,Analysis-ready npk quality flag.,boolean,Yes
+npk_reference_year,Npk Reference Year,Analysis-ready npk reference year.,year,Yes
+nuts0_id,NUTS0 ID,Analysis-ready nuts0 id.,code,Yes
+nuts2_id,NUTS2 ID,Analysis-ready nuts2 id.,code,Yes
+nuts3_id,NUTS3 ID,Official NUTS 2024 level-3 identifier.,code,Yes
+nuts_version,Nuts Version,Analysis-ready nuts version.,source-specific or dimensionless,Yes
+pesticide_coverage_flag,Pesticide Coverage Flag,Analysis-ready pesticide coverage flag.,boolean,Yes
+pesticide_reference_period,Pesticide Reference Period,Analysis-ready pesticide reference period.,source-specific or dimensionless,Yes
+pesticide_total_kg_ai_ha,Pesticide Total kg active ingredient hectares,Analysis-ready pesticide total kg active ingredient hectares.,kg active ingredient/ha,Yes
+phosphate_p2o5_kg_ha,Phosphate P₂O₅ kg hectares,Analysis-ready phosphate p₂o₅ kg hectares.,kg/ha,Yes
+potash_k2o_kg_ha,Potash K₂O kg hectares,Analysis-ready potash k₂o kg hectares.,kg/ha,Yes
+production_is_derived,Production Is Derived,Analysis-ready production is derived.,source-specific or dimensionless,Yes
+production_proxy_t,Production Proxy T,Analysis-ready production proxy t.,source-specific or dimensionless,Yes
+quality_flag,Quality flag,Availability or completeness assessment.,boolean,Yes
+rainfed_area_ha,Rainfed Area hectares,Analysis-ready rainfed area hectares.,ha,Yes
+seasonal_gdd_base_5_c,Seasonal growing degree days Base 5 °C,Analysis-ready seasonal growing degree days base 5 °c.,°C,Yes
+topsoil_bulk_density_kg_dm3,Topsoil Bulk Density kg Dm3,Analysis-ready topsoil bulk density kg dm3.,kg/dm³,Yes
+topsoil_clay_g_kg,Topsoil Clay G kg,Analysis-ready topsoil clay g kg.,g/kg,Yes
+topsoil_nitrogen_g_kg,Topsoil Nitrogen G kg,Analysis-ready topsoil nitrogen g kg.,g/kg,Yes
+topsoil_organic_carbon_g_kg,Topsoil Organic Carbon G kg,Analysis-ready topsoil organic carbon g kg.,g/kg,Yes
+topsoil_ph_h2o,Topsoil Ph H2o,Analysis-ready topsoil ph h2o.,source-specific or dimensionless,Yes
+topsoil_sand_g_kg,Topsoil Sand G kg,Analysis-ready topsoil sand g kg.,g/kg,Yes
+topsoil_silt_g_kg,Topsoil Silt G kg,Analysis-ready topsoil silt g kg.,g/kg,Yes
+total_crop_area_ha,Total Crop Area hectares,Analysis-ready total crop area hectares.,ha,Yes
+year,Year,Analysis-ready year.,source-specific or dimensionless,Yes
+yield_source_geography,Yield Source Geography,Analysis-ready yield source geography.,source-specific or dimensionless,Yes
+yield_t_ha,Yield T hectares,Analysis-ready yield t hectares.,t/ha,Yes
+yield_value_type,Yield Value Type,Analysis-ready yield value type.,source-specific or dimensionless,Yes

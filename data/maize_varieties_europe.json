@@ -1,0 +1,2002 @@
+{
+  "schema_version": "2.1",
+  "crop": "maize",
+  "generated": "2026-10-17",
+  "disclaimer": "Per-variety facts listed under verification.verified_fields were checked against the cited sources. All other numeric values (GDD, frost kill, soil, sowing/harvest windows, etc.) are typical type-level agronomic ranges, not variety trial data, and carry low-to-medium confidence. Verify before operational use.",
+  "coverage_notes": "FAO numbers for KWS and Fundulea hybrids come from breeder catalogues; GDD (base 10 °C) is approximated as 2000 + 2×FAO and is NOT a measured value. Pioneer, DEKALB, LG, Syngenta, Limagrain hybrids were NOT verified and are excluded. Silage-specific hybrids are not covered. Flowering GDD is now 1100 + FAO for every hybrid (v2.0 had a 10 GDD jump above FAO 310).",
+  "units": {
+    "gdd": "growing degree-days, base = growth.heat_base_c, cumulative from sowing",
+    "dates": "MM-DD"
+  },
+  "sources": {
+    "FDL_MAIZE": "https://www.incda-fundulea.ro/anale/90/90.4.pdf",
+    "KWS_ADONISIO": "https://mediamaster.kws.com/01_Products/MD_Moldavia/Corn/Ricardo-Adonisio-2026.pdf",
+    "KWS_RO_PORUMB": "https://mediamaster.kws.com/01_Products/MD_Moldavia/Corn/Porumb-2026.pdf",
+    "LFL_2026": "https://www.lfl.bayern.de/mam/cms07/iab/dateien/sortenempfehlungen_getreide_legus_2026_neu.pdf",
+    "FDL_AMURG_SHEET": "https://mail.incda-fundulea.ro/fise/pdf/Porumb/amurg.pdf",
+    "FDL_MIRAJ_SHEET": "https://www.incda-fundulea.ro/fise/pdf/Porumb/miraj.pdf",
+    "FDL_MAIZE_POSTER": "https://www.agroforest-bio.incda-fundulea.ro/images/postere/4.pdf"
+  },
+  "varieties": [
+    {
+      "variety_id": "kws_allegro",
+      "variety_name": "KWS Allegro",
+      "category": "cultivated",
+      "fao_number": 250,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1350.0,
+          "maturity": 2500
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-20",
+        "window_end": "05-15",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 140,
+      "harvest": {
+        "window": [
+          "09-15",
+          "10-10"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1120.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1120.0,
+            1550.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1550.0,
+            2500
+          ]
+        }
+      },
+      "maturity_group": "early",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS Moldova/Romania 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 250 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_lauro",
+      "variety_name": "KWS Lauro",
+      "category": "cultivated",
+      "fao_number": 290,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1390.0,
+          "maturity": 2580
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 144,
+      "harvest": {
+        "window": [
+          "09-20",
+          "10-20"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1160.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1160.0,
+            1600.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1600.0,
+            2580
+          ]
+        }
+      },
+      "maturity_group": "early",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 290 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_ricardo",
+      "variety_name": "KWS Ricardo",
+      "category": "cultivated",
+      "fao_number": 310,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1410.0,
+          "maturity": 2620
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 146,
+      "harvest": {
+        "window": [
+          "09-20",
+          "10-20"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1180.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1180.0,
+            1620.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1620.0,
+            2620
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue; breeder describes it as an intensive dent type with stay-green. Higher-TKW claim in the catalogue is a breeder claim.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 310 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_adonisio",
+      "variety_name": "KWS Adonisio",
+      "category": "cultivated",
+      "fao_number": 330,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1430.0,
+          "maturity": 2660
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 148,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1200.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1200.0,
+            1630.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1630.0,
+            2660
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "Dent type, fast dry-down; 240–280 cm; ear 80–90 cm; TKW 330–350 g; yield potential 17 t/ha (breeder); rec. density 65–70k irrigated, 55–60k non-irrigated.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number",
+          "type",
+          "height",
+          "potential"
+        ],
+        "source_ids": [
+          "KWS_ADONISIO"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 330, dent type, plant height 240-280 cm, ear height 80-90 cm, TKW 330-350 g, 17 t/ha potential, density 65-70k irrigated and 55-60k non-irrigated: all match the KWS Adonisio sheet."
+          ],
+          "not_rechecked": [
+            "Fast dry-down wording ('Rapida')."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_hypolito",
+      "variety_name": "KWS Hypolito",
+      "category": "cultivated",
+      "fao_number": 350,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1450.0,
+          "maturity": 2700
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 150,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1220.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1220.0,
+            1650.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1650.0,
+            2700
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 350 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_lemondo",
+      "variety_name": "KWS Lemondo",
+      "category": "cultivated",
+      "fao_number": 350,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1450.0,
+          "maturity": 2700
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 150,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1220.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1220.0,
+            1650.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1650.0,
+            2700
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 350 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_akustika",
+      "variety_name": "KWS Akustika",
+      "category": "cultivated",
+      "fao_number": 350,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1450.0,
+          "maturity": 2700
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 150,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1220.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1220.0,
+            1650.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1650.0,
+            2700
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 350 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_milekano",
+      "variety_name": "KWS Milekano",
+      "category": "cultivated",
+      "fao_number": 360,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1460.0,
+          "maturity": 2720
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 151,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1230.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1230.0,
+            1660.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1660.0,
+            2720
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 360 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_oltenio",
+      "variety_name": "KWS Oltenio",
+      "category": "cultivated",
+      "fao_number": 360,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1460.0,
+          "maturity": 2720
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 151,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1230.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1230.0,
+            1660.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1660.0,
+            2720
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 360 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_kashmir",
+      "variety_name": "KWS Kashmir",
+      "category": "cultivated",
+      "fao_number": 370,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1470.0,
+          "maturity": 2740
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 152,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1240.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1240.0,
+            1670.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1670.0,
+            2740
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 370 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_donjuan",
+      "variety_name": "KWS Donjuan",
+      "category": "cultivated",
+      "fao_number": 400,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1500.0,
+          "maturity": 2800
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 155,
+      "harvest": {
+        "window": [
+          "10-05",
+          "11-05"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1270.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1270.0,
+            1700.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1700.0,
+            2800
+          ]
+        }
+      },
+      "maturity_group": "late",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO",
+        "MD"
+      ],
+      "notes": "FAO per KWS 2026 catalogue; latest in the list.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number"
+        ],
+        "source_ids": [
+          "KWS_RO_PORUMB"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 400 listed for this hybrid in the KWS Moldova/Romania 2026 maize catalogue."
+          ],
+          "not_rechecked": [
+            "GDD, windows, soil, rotation: type defaults."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "fdl_amurg",
+      "variety_name": "FDL Amurg",
+      "category": "cultivated",
+      "fao_number": 360,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1460.0,
+          "maturity": 2720
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 151,
+      "harvest": {
+        "window": [
+          "09-25",
+          "10-25"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1230.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1230.0,
+            1660.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1660.0,
+            2720
+          ]
+        }
+      },
+      "maturity_group": "medium",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Fundulea single-cross, registered 2022, FAO 360; Fundulea calls the FAO 360-390 band 'semi-early'. Fundulea quotes a 126-128 day vegetation period (basis not stated); days_to_maturity_typical here is a sowing-to-maturity estimate and is not directly comparable.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number",
+          "registered",
+          "vegetation period (quoted)"
+        ],
+        "source_ids": [
+          "FDL_MAIZE",
+          "FDL_AMURG_SHEET",
+          "FDL_MAIZE_POSTER"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 360, registration year 2022, single cross, semi-early class and vegetation period 126-128 days confirmed (FDL sheet, FDL_MAIZE)."
+          ],
+          "not_rechecked": [
+            "days_to_maturity_typical basis."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "fdl_miraj",
+      "variety_name": "FDL Miraj",
+      "category": "cultivated",
+      "fao_number": 390,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1490.0,
+          "maturity": 2780
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-10",
+        "window_end": "05-05",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 154,
+      "harvest": {
+        "window": [
+          "10-05",
+          "11-05"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1260.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1260.0,
+            1690.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1690.0,
+            2780
+          ]
+        }
+      },
+      "maturity_group": "late",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "RO"
+      ],
+      "notes": "Fundulea single-cross, registered 2022, FAO 390; Fundulea calls the FAO 360-390 band 'semi-early'. Fundulea quotes a 128-130 day vegetation period (basis not stated); days_to_maturity_typical here is a sowing-to-maturity estimate and is not directly comparable.",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "fao_number",
+          "registered",
+          "vegetation period (quoted)"
+        ],
+        "source_ids": [
+          "FDL_MAIZE",
+          "FDL_MIRAJ_SHEET",
+          "FDL_MAIZE_POSTER"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "FAO 390, registration year 2022, single cross, semi-early class and vegetation period 128-130 days confirmed (FDL sheet, FDL_MAIZE)."
+          ],
+          "not_rechecked": [
+            "days_to_maturity_typical basis."
+          ]
+        }
+      },
+      "confidence": "medium"
+    },
+    {
+      "variety_id": "kws_curacao",
+      "variety_name": "KWS Curacao",
+      "category": "cultivated",
+      "fao_number": 200,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1300.0,
+          "maturity": 2400
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-20",
+        "window_end": "05-15",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 135,
+      "harvest": {
+        "window": [
+          "09-15",
+          "10-10"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1080.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1080.0,
+            1490.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1490.0,
+            2400
+          ]
+        }
+      },
+      "maturity_group": "very_early",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "Bavarian organic recommendation 2026 (LfL): grain maize frueh (early), K200. Silage rating S210. fao_number is the German Reifezahl K-number used as an FAO proxy, not an FAO class from the breeder. main_regions DE only (trial evidence from Bavaria and Saxony).",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "earliness_class"
+        ],
+        "source_ids": [
+          "LFL_2026"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "LfL 'Sortenempfehlungen Sommerungen 2026' lists it as grain maize frueh (early), K200."
+          ],
+          "not_rechecked": [
+            "Equivalence K-number ~ FAO number is an approximation."
+          ]
+        }
+      },
+      "confidence": "low"
+    },
+    {
+      "variety_id": "kws_gustavius",
+      "variety_name": "KWS Gustavius",
+      "category": "cultivated",
+      "fao_number": 230,
+      "growth": {
+        "heat_base_c": 10.0,
+        "heat_units_to_reach": {
+          "emergence": 90,
+          "flowering": 1330.0,
+          "maturity": 2460
+        }
+      },
+      "heat_stress_above_c": 32,
+      "waterlogging_sensitivity": "high",
+      "water": {
+        "irrigation": "helpful"
+      },
+      "organic_matter_need": "medium",
+      "compaction_sensitivity": "high",
+      "crop_code": "maize",
+      "season_type": "spring",
+      "subtype": "grain",
+      "sowing": {
+        "window_start": "04-20",
+        "window_end": "05-15",
+        "min_soil_temp_c": 9
+      },
+      "frost_tolerance": "low",
+      "frost_kill_temp_c": -2,
+      "drought_sensitivity": "high",
+      "order_months": [
+        1,
+        2,
+        3
+      ],
+      "soil": {
+        "ph_min": 5.5,
+        "ph_max": 8.0,
+        "ph_best": [
+          6.0,
+          7.0
+        ],
+        "texture_best": [
+          "medium",
+          "heavy"
+        ],
+        "texture_ok": [
+          "light"
+        ]
+      },
+      "rotation": {
+        "good_after": [
+          "soybean",
+          "field_pea",
+          "wheat",
+          "barley",
+          "sunflower",
+          "rapeseed",
+          "faba_bean"
+        ],
+        "avoid_after": [
+          "maize_grain",
+          "maize_silage",
+          "sorghum"
+        ]
+      },
+      "days_to_maturity_typical": 138,
+      "harvest": {
+        "window": [
+          "09-15",
+          "10-10"
+        ]
+      },
+      "phases": {
+        "germination": {
+          "gdd_from_sowing": [
+            0,
+            90
+          ]
+        },
+        "vegetative": {
+          "gdd_from_sowing": [
+            90,
+            1110.0
+          ]
+        },
+        "flowering": {
+          "gdd_from_sowing": [
+            1110.0,
+            1530.0
+          ]
+        },
+        "grain_fill": {
+          "gdd_from_sowing": [
+            1530.0,
+            2460
+          ]
+        }
+      },
+      "maturity_group": "early",
+      "quality_class": "Grain hybrid",
+      "protein_potential_pct": null,
+      "main_regions": [
+        "DE"
+      ],
+      "notes": "Bavarian organic recommendation 2026 (LfL): grain maize mittelfrueh (mid-early), K230. fao_number is the German Reifezahl K-number used as an FAO proxy, not an FAO class from the breeder. main_regions DE only (trial evidence from Bavaria and Saxony).",
+      "verification": {
+        "status": "partially_verified",
+        "verified_fields": [
+          "status",
+          "earliness_class"
+        ],
+        "source_ids": [
+          "LFL_2026"
+        ],
+        "other_fields": "type-level defaults for the crop/season type, not variety-specific",
+        "audit": {
+          "date": "2026-10-17",
+          "result": "confirmed",
+          "evidence": [
+            "LfL 'Sortenempfehlungen Sommerungen 2026' lists it as grain maize mittelfrueh (mid-early), K230."
+          ],
+          "not_rechecked": [
+            "Equivalence K-number ~ FAO number is an approximation."
+          ]
+        }
+      },
+      "confidence": "low"
+    }
+  ],
+  "audit": {
+    "date": "2026-10-17",
+    "performed_by": "Claude (re-check of cited sources, then consistency validation with validate.py)",
+    "scope": "All 15 hybrids re-checked: 13 FAO numbers against KWS/Fundulea documents, 2 K-numbers against LfL Bavaria, Adonisio specification line by line.",
+    "changes_in_this_version": [
+      "Flowering GDD made linear (1100 + FAO): 10 hybrids with FAO >= 330 changed by -10 GDD; phase boundaries recomputed.",
+      "fdl_amurg, fdl_miraj: vegetation period from Fundulea sheets added to notes, sheet sources added; notes no longer imply 'late' vs source 'semi-early' (definition added).",
+      "kws_curacao, kws_gustavius: notes state K-number is a proxy and give the LfL label.",
+      "Added audit block and definitions."
+    ],
+    "known_limitations": [
+      "GDD (2000 + 2*FAO maturity, 1100 + FAO flowering) is a synthetic model, not measured data.",
+      "K-number to FAO equivalence is approximate.",
+      "German hybrids use Romania-style sowing windows."
+    ],
+    "definitions": {
+      "days_to_maturity_typical": "Sowing-to-maturity in days for a sowing at the middle of sowing.window. Actual days shorten with later sowing, so the harvest window is not simply window_start + days.",
+      "gdd_basis": "heat_units_to_reach and phases are cumulative growing degree-days from sowing, base = growth.heat_base_c. Type-level values unless a field is listed in verification.verified_fields.",
+      "maturity_group": "Ordinal label used inside this file only. For maize it is derived from fao_number (<=200 very_early, 201-300 early, 301-370 medium, >370 late). For other crops it is a relative breeder/list rating where verified, else 'medium' default. It is not the national label of any source (Fundulea calls FAO 360-390 'semi-early'; LfL Bavaria calls K200 'frueh' and K230 'mittelfrueh')."
+    }
+  }
+}
